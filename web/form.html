@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/form.js"></script>
+    <link rel="stylesheet" href="../css/All.css">
+    <title>K-pop HKFC Questionair</title> 
+</head>
+<body>
+    <div id="flex-container">
+        <div id="header">
+            <h1>K-pop HK Fans Club</h1>
+        </div>
+        <div id="nav">
+            <ul id="list">
+                <li class="a">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="a">
+                    <a href="info.html">
+                        Information
+                    </a>
+                </li>
+                <li class="a">
+                    <a href="form.html">
+                        Questionair
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="main">
+            <form id="f1" name="f1" onSubmit="print_result()">
+                <h2>Questionair</h2>
+                <table>
+                    <tr>
+                        <td>Favorite idol Name</td>
+                        <td>
+                            <input type="text" name="Iname" pattern="[A-Z][\w]+"
+                                placeholder="input idol name here"   title="Capital first character" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Favorite idol Group</td>
+                        <td>
+                            <input type="text" name="Gname" pattern="[A-Z][\w]+"
+                                placeholder="input idol group name here" title="Capital first character" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Favorite MV</td>
+                        <td>
+                            <input type="url" name="url" placeholder="http://LinkHere" title="http://domainName" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="gender" value="M" required="required" />Male
+                            <input type="radio" name="gender" value="F" />Female
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>Aspects Of K-pop</td>
+                        <td>
+                            <input type="checkbox" name="aok" value="ms" />Music & Songs
+                            <input type="checkbox" name="aok" value="cp" />Choreography & Performances
+                            <input type="checkbox" name="aok" value="fs" />Fashion & Styling
+                            <br>
+                            <input type="checkbox" name="aok" value="rsvp" />Reality Shows & Variety Programs
+                            <input type="checkbox" name="aok" value="cf" />K-Pop Culture & Fandom
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Favorite Music Type</td>
+                        <td>
+                        <select name="type">
+                            <option value="">Please select one sport</option>
+                            <option value="p">Pop</option>
+                            <option value="hh">hip-hop</option>
+                            <option value="rb">R&B</option>
+                            <option value="edm">EDM</option>
+                            <option value="r">Rock</option>
+                        </select>
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>Rating Of Our Website</td>
+                        <td>
+                            <input type="range" name="range" min="1" max="5" />  (Min 1, Max 5)
+                        </td>  
+                    </tr>  
+                </table>
+                <br />
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+
+        <div id="footer">
+            <p>
+                &copy; 2025 K-pop HK Fans Club. All Rights Reserved.           
+            </p>
+            <p id="link">
+                <a href="https://www.youtube.com/@BLACKPINK">BLACKPINK Official Youtube</a> |
+                <a href="https://www.youtube.com/@LESSERAFIM_official">LE SSERAFIM Official Youtube</a> |
+                <a href="https://www.ygfamily.com" >YG Entertainment</a> |
+                <a href="https://www.sourcemusic.com" >Source Music</a> |
+                <a href="https://www.koreaherald.com" >Korean News</a> 
+            </p>
+        </div>
+    </div>
+</body>
+</html>

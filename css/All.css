@@ -1,0 +1,189 @@
+#header, #nav, #main, #main1, #main2, #footer {
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(255,80,239,1) 100%);
+    line-height: 1.6;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    margin: 2.5px 1px 2.5px 1px;
+    padding: 15px;
+
+}
+
+#flex-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#header {
+    width: 100%;
+    font-size: 25px;
+    text-shadow: 3px 3px 7px purple;
+}
+
+
+#header h1 {
+    text-align:center;
+}
+
+#nav {
+    font-size: 26px;
+    width: 100%;
+}
+
+
+#nav #list {
+    list-style-type: none; /* Removes the bullet points */
+    display: flex;
+    font-size: 18px;
+    justify-content: space-around; 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#nav a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+
+#main1, #main2 {
+    width: 45%;
+    flex-grow: 1;
+}
+
+#main {
+    width: 100%;
+    
+}
+
+#main td {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    
+}
+
+#main1 #newMV , .randomMV #video2 {
+    height: 500px;
+}
+
+#newMV h2, .randomMV h2, #f1 h2 {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+#newMV {
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#button {
+    padding-top: 50px;
+}
+
+#newMV #video1{
+    width: 75%;
+    height: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+#main1 p, #main2 p {
+    text-indent: 25px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.photo {
+    border: 1px solid rgb(0, 0, 0);
+    padding-bottom: 0px;
+    margin: 2px 0px 2px 0px ;  
+    width: 50%;
+}
+
+.photo img {
+    width: 100%;
+}
+
+.caption{
+    font-size: 16px;
+}
+
+.narrow_screen {
+    display: none;
+}
+
+#club img {
+    float: right;
+    width: 50%;
+    margin-left: 5px;
+}
+
+#IG img {
+    float: left;
+    width: 50%;
+    margin-right: 5px;
+}
+
+#main2 iframe {
+    width: 100%;
+    height: 90%;
+}
+
+#footer {
+    height: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+  
+    #header, #nav, #main1, #main2, #footer {
+        width: 100%;
+    }
+
+    #main2 img {
+        width: 40%;
+    }
+
+    #main1 #newMV , .randomMV #video2 {
+        height: 100%;
+    }
+
+    #newMV #video1 {
+        height: 90%;
+    }
+
+    #main1 #newMV , .randomMV #video2 {
+        height: 320px;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    #header {
+        font-size: 18px;
+    }
+    
+    #main2 img {
+        display: none;
+    }
+
+    #nav #list{
+        font-size: 18px;
+    }
+
+    .narrow_screen {
+        display: flex;
+    }
+
+    .width_screen {
+        display: none;
+    }
+
+    #main1 #newMV , .randomMV #video2 {
+        height: 240px;
+    }
+}
+
